@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Title</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper-4.4.1.min.css">
+    <link rel="stylesheet" href="css.css">
+    <script src="jquery-1.11.1.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="swiper.min.js"></script>
+    <script type="text/javascript" src="myjs.js"></script>
+</head>
+<body>
+    <div class="header clearFix">
+        <!-- swiper部分 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/headbg_01.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/headbg02.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/headbg03.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/headbg04.jpg" alt=""></div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next button-next"></div>
+            <div class="swiper-button-prev button-prev"></div>
+        </div>
+
+        <!-- sitebar + siteheader -->
+        <div class="w">
+            <div class="site-sidebar">
+                <div class="welcome fl" style="color: #ffffff;">
+                    你好，欢迎来到CHINADDOS
+                </div>
+                <div class="vip fr">
+                    <button class="log-in" id="Log_in">
+                        会员登录
+                    </button>
+                    <span> / </span>
+                    <button class="register" id="Register">
+                        会员注册
+                        <!--遮罩层-->
+                        <div class="mask" id="Mask">
+                            <div class="show" id="Show">
+                                <span class="close">×</span>
+                                <div class="box-message">
+                                    <input type="text" id="Txt_message">
+                                    <label for="Txt_message" id="Message">请输入账号</label>
+                                </div>
+                                <div class="box-password">
+                                    <input type="text" id="Txt_password">
+                                    <label for="Txt_password" id="Password">请输入密码</label>
+                                </div>
+                                <div class="colorbtn">
+                                    <input type="button" value="登录" >
+                                    <input type="button" value="忘记密码">
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                   <!-- &lt;!&ndash;遮罩层&ndash;&gt;
+                    <div class="mask" id="Mask">
+                        <div class="show" id="Show">
+                            <div class="box-message">
+                                <input type="text" id="Txt_message">
+                                <label for="Txt_message" id="Message">请输入账号</label>
+                            </div>
+                            <div class="box-password">
+                                <input type="text" id="Txt_password">
+                                <label for="Txt_password" id="Password">请输入密码</label>
+                            </div>
+                            <div class="colorbtn">
+                                <input type="button" value="登录" >
+                                <input type="button" value="忘记密码">
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+            <div class="site-header" >
+                <h1>CHINADDOS</h1>
+                <div class="nav ac" id="Nav">
+                    <ul>
+                        <li class="active"><a href="#">首页</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">产品中心</a></li>
+                        <li><a href="#">服务与支持</a></li>
+                        <li class="last"><a href="#">下载中心</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="main">
+    <!-- Aboutus部分 -->
+    <div class="about-us clearFix">
+        <div class="title">
+            <h1>
+                <span style="color: #1654b2;margin-right: 10px;">ABOUT</span><span style=" color: #1a202c;">US</span>
+            </h1>
+            <h2 class="ac">关于我们</h2>
+        </div>
+        <div class="content w">
+            <div class="content-l fl ac">
+                <img src="images/changfang_06.png" alt="">
+                <a href="#" class="us">ABOUT US</a>
+                <a href="#" class="women">关于我们</a>
+            </div>
+            <div class="content-r fl">
+                <p>关于<span style="font-size: 30px;margin-left: 10px">CHINADDOS</span></p>
+                <p class="ac">你知道多少....</p>
+                <p style="color: #ef8326;padding-top: 42px">中国DDOS防御实验室（China DDOS Lab）</p>
+                <p>成立于2003年，以服务创造价值 的理念立足于网络安全领域。今天，我
+                    们 已经成长一家以拒绝服务及洪水攻击防御为方向的网络安全技术研发
+                    机构。</p>
+                <a href="#" class="more ac">MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- product-center部分开始 -->
+    <div class="product-center clearFix">
+        <div class="title" style="border-bottom: none">
+            <h1 style="color: #ffffff">
+                <span style="margin-right: 10px;">PRODUCT</span><span>CENTER</span>
+            </h1>
+            <h2 class="ac" style="background:rgba(255,255,255,0); color:#ffffff">产品中心</h2>
+            <div class="content w">
+                <div class="rule">
+                    <h3>编辑主机防护规则</h3>
+                    <p>价值创造来自于服务，没有一
+                        种完善的产品能够为用户提供
+                        全天候的妥善保护。快速响应
+                        和随需而变才是...
+                    </p>
+                    <a href="#">MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- service and support部分开始 -->
+    <div class="serv-and-suppo clearFix">
+        <div class="title">
+            <h1>
+                <span style="color: #1654b2;margin-right: 10px;">SERVICE</span><span style=" color: #1a202c;">SUPPORT</span>
+            </h1>
+            <h2 class="ac">产品中心</h2>
+            <div class="content w clearFix">
+                <div class="content-l fl clearFix">
+                    <div class="solution clearFix">
+                        <img src="images/serv1.png" alt="">
+                        <div class="detail-content">
+                            <h3>使用教程指南实施解决方案</h3>
+                            <div class="date">2018-09-20</div>
+                            <p>数十万个网站提供在线安全保护，互联网上任何新型攻
+                                击出现时云盾都能第一时间感知...
+                                <a href="#">[详细>>]</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news clearFix">
+                        <img src="images/serv3.png" alt="">
+                        <div class="detail-content">
+                            <h3>网络攻击知识IDC行业新闻</h3>
+                            <div class="date">2018-09-18</div>
+                            <p>我们深信，价值创造来自于服务，没有一种完善的产品
+                                能够为用户提供全天候的保护。快速响应...
+                                <a href="#">[详细>>]</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-r fl clearFix">
+                    <div class="safety clearFix">
+                        <img src="images/serv2.png" alt="">
+                        <div class="detail-content">
+                            <h3>行业安全新闻网络攻击知识IDC行业新闻</h3>
+                            <div class="date">2018-09-20</div>
+                            <p>免费注册，将所有域名放在云盾统一管理，任意添加解
+                                析修改解析...
+                                <a href="#">[详细>>]</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="IDC clearFix">
+                        <img src="images/serv4.png" alt="">
+                        <div class="detail-content">
+                            <h3>行业安全新闻网络攻击知识IDC行业新闻</h3>
+                            <div class="date">2018-09-20</div>
+                            <p>免费注册，将所有域名放在云盾统一管理，任意添加解
+                                析修改解析,同步更新程序...
+                                <a href="#">[详细>>]</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearFix"></div>
+    <!--  download center部分开始 -->
+    <div class="download-center">
+        <div class="title" style="border-bottom: none">
+            <h1 style="color: #ffffff">
+                <span style="margin-right: 10px;">DOWNLOAD</span><span>CENTER</span>
+            </h1>
+            <h2 class="ac" style="background:rgba(255,255,255,0);color:#ffffff;">下载中心</h2>
+        </div>
+        <div class="content w">
+            <div>
+                <a href="#">抗拒绝服务系统异常流量清洗系统</a>
+                <a href="#">非法信息监控系统防透传监控系统</a>
+                <a href="#">监控系统防透传监控系统</a>
+                <a href="#">非法信息监控系统防透传监控系统</a>
+                <a href="#">非法信息监控系统防透传监控系统</a>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+<!--footer部分-->
+<div class="footer">
+    <div class="w">
+        <div class="link ac">
+            <a href="#">关于我们</a> <a href="#">产品中心</a> <a href="#">服务与支持</a> <a href="#">下载中心</a>
+        </div>
+        <div class="content fr ar">
+            <p class="copy">Copyright © 2013 ChinaDDOS All rights reserved  版权所有 · 长沙市智为信息技术有限公司  京ICP备0123456123号</p>
+            <p>联系方式: 0731-85818844   QQ: 296572230(售后) 244639962(售后)    传真：0731-85568844</p>
+            <p>  公司地址: 湖南省长沙市高新区文轩路27号麓谷企业广场C1栋201</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
